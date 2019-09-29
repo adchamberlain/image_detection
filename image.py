@@ -14,7 +14,7 @@ import imutils
 import numpy as np
 
 # Read in a test image
-image = imutils.url_to_image('https://media.glassdoor.com/l/18/c2/39/97/getting-ready-for-the-speaker-series.jpg')
+image = cv2.imread('/Users/andrew/GitHub/image_detection/getting-ready-for-the-speaker-series.jpg')
 
 # Show image. 
 plt.imshow(image)
@@ -64,7 +64,7 @@ plt.imshow(image)
 ### Step 2. Detect other common objects in image, including people. 
 
 # Read in a test image
-image = imutils.url_to_image('https://media.glassdoor.com/l/18/c2/39/97/getting-ready-for-the-speaker-series.jpg')
+image = cv2.imread('/Users/andrew/GitHub/image_detection/getting-ready-for-the-speaker-series.jpg')
 
 # Dectect common objects in image. 
 bbox, label, conf = cv.detect_common_objects(image)
